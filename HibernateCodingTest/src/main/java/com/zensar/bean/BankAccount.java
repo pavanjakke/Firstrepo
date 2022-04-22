@@ -4,7 +4,8 @@ import javax.persistence.Column;
 import javax.persistence.Embeddable;
 import javax.persistence.Id;
 
-@Embeddable
+@Entity
+@Table(name = "account")
 public class BankAccount {
 	@Id
 	int bankId;
